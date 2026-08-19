@@ -69,7 +69,7 @@ function updateBallRotation() {
   const delta = currentScrollY - lastScrollY;
   lastScrollY = currentScrollY;
 
-  rotationY += delta * 0.4;
+  rotationY += delta * 0.55;
 
   if (discoBall) {
     discoBall.style.transform = `rotateY(${rotationY}deg) rotateX(6deg)`;
@@ -87,8 +87,10 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 
 if (!prefersReducedMotion && discoBall) {
+  // Idle spin: ~9deg/sec, a full rotation every ~40s — fast enough to
+  // read as clearly spinning rather than static at a glance.
   setInterval(() => {
-    rotationY += 0.15;
+    rotationY += 0.45;
     discoBall.style.transform = `rotateY(${rotationY}deg) rotateX(6deg)`;
   }, 50);
 } else if (discoBall) {
