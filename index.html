@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Roster — Booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <span class="nav__mark">ROSTER</span>
+    <nav class="nav__links">
+      <a href="#talent">Talent</a>
+      <a href="#events">Past Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Book</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="blob-field" aria-hidden="true">
+      <div class="blob blob--violet"></div>
+      <div class="blob blob--coral"></div>
+      <div class="blob blob--cyan"></div>
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow">Booking now — 2026 dates open</p>
+      <h1 class="hero__logo">ROSTER</h1>
+      <a href="#contact" class="btn btn--primary">Book the roster</a>
+    </div>
+    <a href="#talent" class="scroll-cue" aria-label="Scroll to talent">↓</a>
+  </section>
+
+  <!-- TALENT -->
+  <section class="talent" id="talent">
+    <p class="eyebrow eyebrow--dark">The lineup</p>
+    <h2 class="section-title">Talent</h2>
+
+    <div class="talent-grid">
+
+      <article class="talent-card" data-talent-id="name-one">
+        <div class="talent-card__photo">
+          <img src="assets/talent/name-one.jpg" alt="Name One"
+               onerror="this.onerror=null;this.src='https://picsum.photos/seed/talent1/600/750';">
+        </div>
+        <h3 class="talent-card__name">NAME ONE</h3>
+        <p class="talent-card__genre">Jackin house / acid</p>
+        <div class="talent-card__links">
+          <button type="button" class="text-link talent-toggle" aria-expanded="false" aria-controls="panel-name-one-bio">Bio</button>
+          <button type="button" class="text-link talent-toggle" aria-expanded="false" aria-controls="panel-name-one-mix">Listen to mix</button>
+        </div>
+        <div class="talent-card__expand" id="panel-name-one-bio" aria-hidden="true">
+          <div class="talent-card__expand-inner">
+            <p class="talent-card__bio-text">Add Name One's bio here — background, sound, notable gigs.</p>
+            <div class="talent-card__player" data-talent-player></div>
+          </div>
+        </div>
+        <div class="talent-card__expand" id="panel-name-one-mix" aria-hidden="true">
+          <div class="talent-card__expand-inner">
+            <div class="talent-card__player" data-talent-player></div>
+            <p class="talent-card__player-caption">Add a note about this mix — venue, event, tracklist, anything worth saying. Optional; delete this line if you don't want one.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="talent-card" data-talent-id="name-two">
+        <div class="talent-card__photo">
+          <img src="assets/talent/name-two.jpg" alt="Name Two"
+               onerror="this.onerror=null;this.src='https://picsum.photos/seed/talent2/600/750';">
+        </div>
+        <h3 class="talent-card__name">NAME TWO</h3>
+        <p class="talent-card__genre">UK garage / bassline</p>
+        <div class="talent-card__links">
+          <button type="button" class="text-link talent-toggle" aria-expanded="false" aria-controls="panel-name-two-bio">Bio</button>
+          <button type="button" class="text-link talent-toggle" aria-expanded="false" aria-controls="panel-name-two-mix">Listen to mix</button>
+        </div>
+        <div class="talent-card__expand" id="panel-name-two-bio" aria-hidden="true">
+          <div class="talent-card__expand-inner">
+            <p class="talent-card__bio-text">Add Name Two's bio here — background, sound, notable gigs.</p>
+            <div class="talent-card__player" data-talent-player></div>
+          </div>
+        </div>
+        <div class="talent-card__expand" id="panel-name-two-mix" aria-hidden="true">
+          <div class="talent-card__expand-inner">
+            <div class="talent-card__player" data-talent-player></div>
+            <p class="talent-card__player-caption">Add a note about this mix — venue, event, tracklist, anything worth saying. Optional; delete this line if you don't want one.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="talent-card" data-talent-id="name-three">
+        <div class="talent-card__photo">
+          <img src="assets/talent/name-three.jpg" alt="Name Three"
+               onerror="this.onerror=null;this.src='https://picsum.photos/seed/talent3/600/750';">
+        </div>
+        <h3 class="talent-card__name">NAME THREE</h3>
+        <p class="talent-card__genre">Drum & bass / jungle</p>
+        <div class="talent-card__links">
+          <button type="button" class="text-link talent-toggle" aria-expanded="false" aria-controls="panel-name-three-bio">Bio</button>
+          <button type="button" class="text-link talent-toggle" aria-expanded="false" aria-controls="panel-name-three-mix">Listen to mix</button>
+        </div>
+        <div class="talent-card__expand" id="panel-name-three-bio" aria-hidden="true">
+          <div class="talent-card__expand-inner">
+            <p class="talent-card__bio-text">Add Name Three's bio here — background, sound, notable gigs.</p>
+            <div class="talent-card__player" data-talent-player></div>
+          </div>
+        </div>
+        <div class="talent-card__expand" id="panel-name-three-mix" aria-hidden="true">
+          <div class="talent-card__expand-inner">
+            <div class="talent-card__player" data-talent-player></div>
+            <p class="talent-card__player-caption">Add a note about this mix — venue, event, tracklist, anything worth saying. Optional; delete this line if you don't want one.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PAST EVENTS / DISCO BALL -->
+  <section class="events" id="events">
+    <div class="events__content">
+      <div class="events__stage">
+        <div class="disco-wrap" aria-hidden="true">
+          <div class="disco-ball" id="discoBall"></div>
+        </div>
+        <p class="eyebrow eyebrow--light">Where we've played</p>
+        <h2 class="section-title section-title--light">Past Events</h2>
+      </div>
+
+      <div class="flyer-grid">
+        <div class="flyer"><img src="assets/flyers/event-01.jpg" alt="Event flyer"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/flyer1/450/600';"></div>
+        <div class="flyer"><img src="assets/flyers/event-02.jpg" alt="Event flyer"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/flyer2/450/600';"></div>
+        <div class="flyer"><img src="assets/flyers/event-03.jpg" alt="Event flyer"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/flyer3/450/600';"></div>
+        <div class="flyer"><img src="assets/flyers/event-04.jpg" alt="Event flyer"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/flyer4/450/600';"></div>
+        <div class="flyer"><img src="assets/flyers/event-05.jpg" alt="Event flyer"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/flyer5/450/600';"></div>
+        <div class="flyer"><img src="assets/flyers/event-06.jpg" alt="Event flyer"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/flyer6/450/600';"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION + CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__col">
+      <p class="eyebrow eyebrow--dark">Get in touch</p>
+      <h2 class="section-title">Location & Contact</h2>
+      <p class="contact__address">New York, NY<br>Available for bookings worldwide</p>
+      <a href="mailto:hello@example.com" class="btn btn--outline">hello@example.com</a>
+    </div>
+    <div class="contact__col contact__col--links">
+      <p class="eyebrow eyebrow--dark">Follow / Listen</p>
+      <ul class="social-list">
+        <li><a href="#" class="text-link text-link--lg">Music page ↗</a></li>
+        <li><a href="#" class="text-link text-link--lg">Instagram ↗</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 ROSTER</span>
+    <a href="#hero" class="text-link">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
